@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  <title>Studio One</title>
+  <!-- <script src="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"></script>
+    <script src="https://use.typekit.net/plt6aky.js"></script>
+  <script>try{Typekit.load({ async: true });}catch(e){}</script>
+  <script src="audiojs/audio.min.js"></script>
+  <script>
+    audiojs.events.ready(function() {
+      var as = audiojs.createAll();
+    });
+  </script> -->
+   <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+  <div class="header">
+    <a class="home-btn" href="index.html"><img src="img/buffalo-studio-one.png" alt="LRS Logo" width="120"></a>
+    <input id="record-search" type="text" placeholder="Search">
+    <div id="sort">
+      <a class="check" id="alpha-sort"></a><span class="sort-label">Alphabetical</span>
+      <a class="check" id="chron-sort"></a><span class="sort-label">Chronological</span>
+    </div>
+  </div>
+  <div id="loader"></div>
+  <div id="no-results">No search results...<br/>try a different artist or title</div>
+  <div id="record-listing"></div>
+  <script src="js/scroll.js"></script>
+  <script src="js/listing.js"></script>
+</body>
+</html>
